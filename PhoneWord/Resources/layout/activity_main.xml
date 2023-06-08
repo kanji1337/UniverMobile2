@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Введите номер телефона"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/textView1"
+        android:layout_above="@id/textView1"
+        android:layout_marginLeft="70.0dp" />
+    <EditText
+        android:text="1-855-XAMARIN"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="140.0dp"
+        android:layout_marginTop="50.0dp"
+        android:id="@+id/PhoneNumberText" />
+    <Button
+        android:text="Перевести"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PhoneNumberText"
+        android:layout_marginLeft="135.0dp"
+        android:layout_marginTop="20.0dp"
+        android:id="@+id/TranslateButton" />
+    <TextView
+        android:text="Переведенный номер"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TranslateButton"
+        android:layout_marginLeft="115.0dp"
+        android:layout_marginTop="20.0dp"
+        android:id="@+id/TranslatedPhoneword" />
+
+</RelativeLayout>
